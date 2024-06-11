@@ -1,5 +1,5 @@
 variable "zone_name" {
   type        = string
-  default     = "devajji.cloud"
+  default     = "daws-78s.store"
   description = "description"
 }

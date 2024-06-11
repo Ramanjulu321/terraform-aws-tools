@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "devops-daws78s"
+    bucket = "ramu-remote-state"
     key    = "jenkins"
     region = "us-east-1"
     dynamodb_table = "daws-78s-locking"
