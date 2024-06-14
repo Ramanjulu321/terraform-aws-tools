@@ -5,7 +5,7 @@ module "jenkins" {
 
   instance_type          = "t3.small"
   vpc_security_group_ids = ["sg-0c9e01998c14c4c22"] #replace your SG
-  subnet_id = "	subnet-03268e53152c328c8" #replace your Subnet
+  subnet_id = "subnet-03268e53152c328c8" #replace your Subnet
   ami = data.aws_ami.ami_info.id
   user_data = file("jenkins.sh")
   tags = {
