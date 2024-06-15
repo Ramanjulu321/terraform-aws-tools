@@ -47,7 +47,7 @@ module "nexus" {
   # convert StringList to list and get first element
   subnet_id = "subnet-03268e53152c328c8"
   ami = data.aws_ami.nexus_ami_info.id
-  key_name = aws_key_pair.tools.key_name
+  key_name = aws_key_pair.openvpn.key_name
   root_block_device = [
     {
       volume_type = "gp3"
